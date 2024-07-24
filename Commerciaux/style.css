@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 95vh;
+}
+
+h1{
+margin: 0.5rem 0;
+}
+
+.card{
+    width: 100%;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.logo{
+    height: 14vh;
+    width: 14vh;
+    margin: 0.5rem auto;
+}
+
+.list-group-item{
+    margin-top: 0.5rem;
+}
+
+.list-group-item:hover{
+    background-color: #146e09;
+}
+
+.list-group-item:hover a{
+    color: white;
+}
+
+
+#installButton{
+    width: 100vw;
+    display: none;
+}
