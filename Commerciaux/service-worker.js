@@ -22,6 +22,22 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('fetch', event => {
+    const requestURL = new URL(event.request.url);
+
+    // Vérifier si l'URL correspond à l'inscription
+    if (requestURL.pathname === '/referal/8175977614320507790178') {
+        // Vider le cache
+        event.waitUntil(
+            caches.keys().then(cacheNames => {
+                return Promise.all(
+                    cacheNames.map(cacheName => {
+                        return caches.delete(cacheName);
+                    })
+                );
+            })
+        );
+    }
+
     event.respondWith(
         caches.match(event.request)
             .then(response => {
