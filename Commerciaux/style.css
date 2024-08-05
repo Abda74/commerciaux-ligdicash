@@ -40,3 +40,46 @@ margin: 0.5rem 0;
     width: 100vw;
     display: none;
 }
+
+.dropdown{
+    width: 100vw;
+}
+
+.dropdown button{
+    background: white;
+    color: #0a53be;
+    width: 50%;
+}
+
+.dropdown ul{
+    text-align: start;
+    width: 95%;
+    margin: 1.5rem auto;
+    padding: 1.5rem 2rem;
+    border: none;
+}
+
+.dropdown ul li{
+    padding: 0.5rem;
+}
+
+.dropdown ul li:nth-child(2n){
+    background: #0a58ca;
+    color: white;
+
+}
+
+.containergroupe{
+    height: 60vh;
+}
+
+.listeMembers{
+    border: 1px solid black;
+    padding: 0.5rem 1.2rem;
+    width: 50%;
+    margin: 0.5rem 2rem;
+    background: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
